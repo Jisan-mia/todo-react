@@ -26,6 +26,7 @@ body {
 	flex-wrap: nowrap;
 	margin-top: 5px;
 	margin-bottom: 15px;
+	width: 100%;
 }
 .todo-form .todo-input {
 	padding: 14px 40px 14px 16px;

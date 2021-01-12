@@ -43,18 +43,20 @@ const TodoList = () => {
 	};
 
 	return (
-		<div className="todo">
-			<h1>Jisan Todos</h1>
-			<TodoForm onSubmit={addTodo}></TodoForm>
-			{todos.map((todo, index) => (
-				<Todo
-					key={index}
-					todo={todo}
-					updateTodo={updateTodo}
-					removeTodo={removeTodo}
-					completeTodo={completeTodo}
-				/>
-			))}
+		<div className="todo-app">
+			<div className="todo">
+				<h1>Jisan Todos</h1>
+				<TodoForm onSubmit={addTodo}></TodoForm>
+				{todos.map((todo, index) => (
+					<Todo
+						key={index}
+						todo={todo}
+						updateTodo={updateTodo}
+						removeTodo={removeTodo}
+						completeTodo={completeTodo}
+					/>
+				))}
+			</div>
 		</div>
 	);
 };
