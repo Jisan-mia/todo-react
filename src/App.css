@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: rgba(239, 239, 247, 0.932);
+}
+.todo-app {
+	display: flex;
+	justify-content: center;
+	margin: 50px 20px 0 20px;
+}
+
+.todo {
+	background: rgba(255, 255, 255, 0.932);
+	padding: 40px 30px 30px 30px;
+	box-shadow: 0 0 42px 2px rgb(170 175 225 / 65%);
+	border-radius: 5px;
+	height: 520px;
+	max-height: 530px;
+	overflow-y: auto;
+}
+.todo-form {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 5px;
+}
+.todo-form .todo-input {
+	padding: 14px 40px 14px 16px;
+	font-size: 14px;
+	border: 1px solid rgba(155, 0, 250, 1);
+	border-radius: 4px 0 0 4px;
+	outline: none;
+	width: 300px;
+	min-width: 150px;
+}
+
+.todo-form .todo-button {
+	padding: 16px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0 4px 4px 0;
+	background: linear-gradient(
+		90deg,
+		rgba(93, 12, 255, 1) 0%,
+		rgba(155, 0, 250, 1) 100%
+	);
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.todo-form .todo-button.edit {
+	background: linear-gradient(
+		90deg,
+		rgba(20, 159, 255, 1) 0%,
+		rgba(17, 122, 255, 1) 100%
+	);
+	padding: 6.6px;
+}
+
+.todo-row {
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(
+		90deg,
+		rgba(91, 54, 224, 0.753) 0%,
+		rgb(70, 73, 243) 100%
+	);
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 3px;
+}
+.icons {
+	display: flex;
+	align-items: center;
+}
+.edit-icon,
+.delete-icon {
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+.edit-icon {
+	margin-right: 5px;
+}
+.todo-text {
+	color: white;
+}
+
+@media (max-width: 375px) {
+	h1 {
+		font-size: 30px;
+		margin-bottom: 13px;
+	}
+	.todo-app {
+		margin: 15px;
+	}
+
+	.todo {
+		padding: 30px 15px;
+	}
+
+	.todo-form .todo-input {
+		padding: 8px;
+	}
+
+	.todo-form .todo-button {
+		padding: 14px;
+	}
+
+	.todo-form .todo-button.edit {
+		background: linear-gradient(
+			90deg,
+			rgba(20, 159, 255, 1) 0%,
+			rgba(17, 122, 255, 1) 100%
+		);
+		padding: 14px;
+	}
+
+	.todo-row {
+		padding: 10px;
+	}
+
+	.todo-text {
+		font-size: 15px;
+	}
+}
